@@ -457,7 +457,7 @@
 									<th>Current Address</th>
 									<th>Hire Date</th>
 									<th>Email</th>
-									<th>Operationssssssss</th>
+									<th>Operations</th>
 								</tr>
 								<?php 
 								$query="select teacher_id,first_name,middle_name,last_name,current_address,cert_of_emp,hire_date,email from teacher_info";
