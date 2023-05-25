@@ -23,22 +23,19 @@
 		</div>
 	</div>
 
-	<div class="paragraph">
-		<p>
-			CHMSC provides a harmonious environment and learning opportunities to its students regardless of their gender, socioeconomic background, religious beliefs, and regional differences.
-		</p>
-	</div>
 
 	<div id="popup">
 		<div class="close">+</div>
-		<h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+		<h2>About Us</h2>
 		<p>
-			Molestiae tenetur dignissimos natus dolorum laudantium enim iure. Quos
-			exercitationem cumque incidunt asperiores necessitatibus soluta? Labore
-			odio eos dignissimos, tenetur cum repellendus?
+		ACADEMATRIX provides a harmonious environment and learning opportunities to its students regardless of their gender, socioeconomic background, religious beliefs, and regional differences.
 		</p>
-		<a href="#">Close</a>
+		<a href="#" >Close</a>
 	</div>
+
+<?php include('common/cards.php') ?>
+<?php include('common/footer.php') ?>
+
 
 <script>
 	$(document).ready(function() {

@@ -40,6 +40,7 @@
 
 	.header-navbar-fonts h3{
 		font-size: 35px !important;
+		margin-top: .7rem;
 	}
 	.active:hover {
 		position: relative;
@@ -210,7 +211,7 @@
 	}
   }
 
-
+/* about us */
 	#popup {
 	position: fixed;
 	top: 40%;
@@ -225,6 +226,13 @@
 	transition: 0.5s;
 	border-radius: 15px;
 }
+
+	
+
+	#popup {
+		text-align: center;
+	}
+
 
 	#popup.active {
 	top: 50%;
@@ -250,15 +258,51 @@
 	display: inline-block;
 	margin-top: 5px;
 	text-decoration: none;
-	color: #fff;
-	background: rgb(13, 86, 221);
+	color: #5e0209;
+	background: #fff;
 	border-radius: 15px;
+	font-size: 1rem;
+	font-weight: bold;
 }
+
+/* end of about us */
+
+
+/* academic start */
+
+html {
+	scroll-behavior: smooth;
+  }
+  
+  body {
+	font-family: 'Noto Sans HK', sans-serif;
+	background: #fff;
+  }
+  
+  .slider-card {
+	padding: 20px;
+	margin: 50px 15px 90px 15px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
+	border: 1px solid #ccc;
+  }
+  
+  .slider-card img {
+	border-radius: 100px 5px;
+	height: 40vh;
+	width: 65%;
+	margin-top: 1rem;
+	object-fit: cover;
+  }
+  
+/* academic ends */
+
+
   
 	.in-ad-ap{
 		z-index: 10 !important;
-		height: 120px !important;	
-		background-color:#820000 ;		
+		height: 200px !important;	
+		background-color:#5e0209 ;		
 
 	}
 
@@ -267,13 +311,6 @@
 		padding-top: 2%;
 		border-style: solid;
 		height: 80%;
-	}
-
-	.paragraph{
-		height: 250px;
-		padding: 70px;
-		font-size: 25px;
-		background: rgb(196, 196, 196);
 	}
 
 	.faculty{
