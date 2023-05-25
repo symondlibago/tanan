@@ -369,92 +369,84 @@
 				<div class="row w-100">
 					<div class="col-md-12 ml-2">
 						<section class="mt-3">
-							<div class="row">
-								<div class="col-md-12 ml-2">
-									<div class="row">
-									<div class="col-md-6">
-										<form action="search_student.php" method="post">
-											<div class="form-group">
-												<label for="exampleInputPassword1"><h5>Search:</h5></label>
-												<div class="d-flex">
-													<input type="text" name="search" id="search" class="form form-control" placeholder="Enter I'd">
-													<input class="btn btn-primary px-4 ml-4" type="submit" name="btnSearch" value="Search">
-												</div>
+						<div class="row">
+								<div class="col-md-6">
+									<form action="search_student.php" method="post">
+										<div class="form-group">
+											<label for="exampleInputPassword1"><h5>Search:</h5></label>
+											<div class="d-flex">
+												<input type="text" name="search" id="search" class="form form-control" placeholder="Enter I'd">
+												<input class="btn btn-primary px-4 ml-4" type="submit" name="btnSearch" value="Search">
 											</div>
-										</form>
-									</div>	
+										</div>
+									</form>
+								</div>	
+								<div class="col-md-12 pt-5 mb-2">
 									<!-- Large modal -->
-									<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg1">Assign Subjects</button>
+									<button type="button" class="btn btn-primary ml-auto" data-toggle="modal" data-target=".bd-example-modal-lg1">Assign Subjects</button>
+									<a class="btn btn-success" href="asign-single-student-subjects.php"> Assign Single Student Subject</a>
 									<div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-											<div class="modal-content">
-												<div class="modal-header bg-info text-white">
-													<h4 class="modal-title text-center">Assign Subjects To Teachers</h4>
+										<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header bg-info text-white">
+														<h4 class="modal-title text-center">Assign Subjects To Student</h4>
+													</div>
+													<div class="modal-body">
+														<form action="student.php" method="POST" enctype="multipart/form-data">
+															<div class="row mt-3">
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="exampleInputEmail1">Select Course:*</label>
+																		<select class="browser-default custom-select" name="course_code" required="">
+																			<option >Select Course</option>
+																			<?php
+																				$query="select course_code from courses";
+																				$run=mysqli_query($con,$query);
+																				while($row=mysqli_fetch_array($run)) {
+																				echo	"<option value=".$row['course_code'].">".$row['course_code']."</option>";
+																				}
+																			?>
+																		</select>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="exampleInputPassword1" required>Enter Semester:*</label>
+																		<input type="text" name="semester" class="form-control">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="exampleInputPassword1">Enter Roll No:*</label>
+																		<input type="text" name="roll_no" class="form-control">
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="exampleInputPassword1">Select Subject:*</label>
+																		<select class="browser-default custom-select" name="subject_code" required="">
+																			<option >Select Subject</option>
+																			<?php
+																				$query="select subject_code from course_subjects";
+																				$run=mysqli_query($con,$query);
+																				while($row=mysqli_fetch_array($run)) {
+																				echo	"<option value=".$row['subject_code'].">".$row['subject_code']."</option>";
+																				}
+																			?>
+																		</select>
+																	</div>
+																</div>	
+															</div>
+															<div class="modal-footer">
+																<input type="submit" class="btn btn-primary" name="btn_save2">
+																<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															</div>
+														</form>
+													</div>
 												</div>
-												<div class="modal-body">
-													<form action="teacher.php" method="POST" enctype="multipart/form-data">
-														<div class="row mt-3">
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="exampleInputEmail1">Select Course:*</label>
-																	<select class="browser-default custom-select" name="course_code" required="">
-																		<option >Select Course</option>
-																		<?php
-																			$query="select distinct(course_code) from time_table";
-																			$run=mysqli_query($con,$query);
-																			while($row=mysqli_fetch_array($run)) {
-																			echo	"<option value=".$row['course_code'].">".$row['course_code']."</option>";
-																			}
-																		?>
-																	</select>
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="exampleInputPassword1" required>Enter Semester:*</label>
-																	<input type="text" name="semester" class="form-control">
-																</div>
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="exampleInputPassword1">Enter Teacher Id:*</label>
-																	<input type="text" name="teacher_id" class="form-control" required>
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="exampleInputPassword1">Please Select Subject:*</label>
-																	<select class="browser-default custom-select" name="subject_code" required="">
-																		<option >Select Subject</option>
-																		<?php
-																			$query="select subject_code from time_table";
-																			$run=mysqli_query($con,$query);
-																			while($row=mysqli_fetch_array($run)) {
-																			echo	"<option value=".$row['subject_code'].">".$row['subject_code']."</option>";
-																			}
-																		?>
-																	</select>
-																</div>
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="exampleInputPassword1">Enter Total Classes:*</label>
-																	<input type="text" name="total_classes" class="form-control" required>
-																</div>
-															</div>
-														</div>
-														<div class="modal-footer">
-															<input type="submit" class="btn btn-primary" name="btn_save2">
-															<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-														</div>
-													</form>
-												</div>
-											</div>
-									</div>
+										</div>
 									</div>
 								</div>
 							</div>
