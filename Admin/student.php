@@ -55,17 +55,17 @@
  		
  		$place_of_birth=$_POST["place_of_birth"];
  		
- 		$matric_complition_date=$_POST["matric_complition_date"];
+ 		$primary_school=$_POST["primary_school"];
  		
- 		$matric_awarded_date=$_POST["matric_awarded_date"];
+ 		$primary_graduated_date=$_POST["primary_graduated_date"];
  		
- 		$fa_complition_date=$_POST["fa_complition_date"];
+ 		$secondary_school=$_POST["secondary_school"];
  		
- 		$fa_awarded_date=$_POST["fa_awarded_date"];
+ 		$secondary_graduated_date=$_POST["secondary_graduated_date"];
  		
- 		$ba_complition_date=$_POST["ba_complition_date"];
+ 		$senior_high_school=$_POST["senior_high_school"];
  		
- 		$ba_awarded_date=$_POST["ba_awarded_date"];
+ 		$senior_highschool_graduated_date=$_POST["senior_highschool_graduated_date"];
 
  		$password=$_POST['password'];
 
@@ -76,16 +76,16 @@
 // *****************************************Images upload code starts here********************************************************** 
 		$profile_image = $_FILES['profile_image']['name'];$tmp_name=$_FILES['profile_image']['tmp_name'];$path = "images/".$profile_image;move_uploaded_file($tmp_name, $path);
 
-		$matric_certificate = $_FILES['matric_certificate']['name'];$tmp_name=$_FILES['matric_certificate']['tmp_name'];$path = "images/".$matric_certificate;move_uploaded_file($tmp_name, $path);
+		$academics_certificate = $_FILES['academics_certificate']['name'];$tmp_name=$_FILES['academics_certificate']['tmp_name'];$path = "images/".$academics_certificate;move_uploaded_file($tmp_name, $path);
 
-		$fa_certificate = $_FILES['fa_certificate']['name'];$tmp_name=$_FILES['fa_certificate']['tmp_name'];$path = "images/".$fa_certificate;move_uploaded_file($tmp_name, $path);
+		$academic_certificate = $_FILES['academic_certificate']['name'];$tmp_name=$_FILES['academic_certificate']['tmp_name'];$path = "images/".$academic_certificate;move_uploaded_file($tmp_name, $path);
 
-		$ba_certificate = $_FILES['ba_certificate']['name'];$tmp_name=$_FILES['ba_certificate']['tmp_name'];$path = "images/".$ba_certificate;move_uploaded_file($tmp_name, $path);
+		$acads_certificate = $_FILES['acads_certificate']['name'];$tmp_name=$_FILES['acads_certificate']['tmp_name'];$path = "images/".$acads_certificate;move_uploaded_file($tmp_name, $path);
 
 
 // *****************************************Images upload code end here********************************************************** 
 
- 		$query="Insert into student_info(roll_no,first_name,middle_name,last_name,father_name,email,mobile_no,course_code,session,profile_image,prospectus_issued,prospectus_amount,form_b,applicant_status,application_status,cnic,dob,gender,permanent_address,current_address,place_of_birth,matric_complition_date,matric_awarded_date,matric_certificate,fa_complition_date,fa_awarded_date,fa_certificate,ba_complition_date,ba_awarded_date,ba_certificate)values('$roll_no','$first_name','$middle_name','$last_name','$father_name','$email','$mobile_no','$course_code','$session','$profile_image','$prospectus_issued','$prospectus_amount','$form_b','$applicant_status','$application_status','$cnic','$dob','$gender','$permanent_address','$current_address','$place_of_birth','$matric_complition_date','$matric_awarded_date','$matric_certificate','$fa_complition_date','$fa_awarded_date','$fa_certificate','$ba_complition_date','$ba_awarded_date','$ba_certificate')";
+ 		$query="Insert into student_info(roll_no,first_name,middle_name,last_name,father_name,email,mobile_no,course_code,session,profile_image,prospectus_issued,prospectus_amount,form_b,applicant_status,application_status,cnic,dob,gender,permanent_address,current_address,place_of_birth,primary_school,primary_graduated_date,academics_certificate,secondary_school,secondary_graduated_date,academic_certificate,senior_high_school,senior_highschool_graduated_date,acads_certificate)values('$roll_no','$first_name','$middle_name','$last_name','$father_name','$email','$mobile_no','$course_code','$session','$profile_image','$prospectus_issued','$prospectus_amount','$form_b','$applicant_status','$application_status','$cnic','$dob','$gender','$permanent_address','$current_address','$place_of_birth','$primary_school','$primary_graduated_date','$academics_certificate','$secondary_school','$secondary_graduated_date','$academic_certificate','$senior_high_school','$senior_highschool_graduated_date','$acads_certificate')";
  		$run=mysqli_query($con, $query);
  		if ($run) {
  			echo "Your Data has been submitted";
@@ -339,60 +339,58 @@
 								  		<div class="row">
 											<div class="col-md-4">
 											    <div class="form-group">
-											        <label for="exampleInputEmail1">Matric/OLevel Complition Date: </label>
-											        <input type="date" name="matric_complition_date" class="form-control">
+											        <label for="exampleInputEmail1">Primary School: </label>
+											        <input type="text" name="primary_school" class="form-control">
 											    </div>
 											</div>
 											<div class="col-md-4">
 												<div class="form-group">
-												    <label for="exampleInputPassword1">Matric/OLevel Awarded Date:</label>
-												    <input type="date" name="matric_awarded_date" class="form-control">
+												    <label for="exampleInputPassword1">Year Graduated:</label>
+												    <input type="date" name="primary_graduated_date" class="form-control">
 											    </div>
 											</div>
 											<div class="col-md-4">
 												<div class="form-group">
-												    <label for="exampleInputPassword1">Upload Matric/OLevel Certificate:</label>
-												    <input type="file" name="matric_certificate" class="form-control" value="there is no image">
+												    <label for="exampleInputPassword1">Academic Award/s:</label>
+												    <input type="file" name="academics_certificate" class="form-control" value="there is no image">
 											    </div>
 											</div>
 								  		</div>
 								  		<div class="row">
 											<div class="col-md-4">
 											    <div class="form-group">
-											        <label for="exampleInputEmail1">FA/ALevel Complition Date: </label>
-											        <input type="date" name="fa_complition_date" class="form-control">
+											        <label for="exampleInputEmail1">Secondary School: </label>
+													<input type="text" name="secondary_school" class="form-control">											    </div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+												    <label for="exampleInputPassword1">Year Graduated:</label>
+												    <input type="date" name="secondary_graduated_date" class="form-control">
 											    </div>
 											</div>
 											<div class="col-md-4">
 												<div class="form-group">
-												    <label for="exampleInputPassword1">FA/ALevel Awarded Date:</label>
-												    <input type="date" name="fa_awarded_date" class="form-control">
-											    </div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-												    <label for="exampleInputPassword1">Upload FA/ALevel Certificate:</label>
-												    <input type="file" name="fa_certificate" class="form-control" value="there is no image" >
+												    <label for="exampleInputPassword1">Academic Award/s:</label>
+												    <input type="file" name="academic_certificate" class="form-control" value="there is no image" >
 											    </div>
 											</div>
 								  		</div>
 								  		<div class="row">
 											<div class="col-md-4">
 											    <div class="form-group">
-											        <label for="exampleInputEmail1">BA Complition Date: </label>
-											        <input type="date" name="ba_complition_date" class="form-control" value="0">
+											        <label for="exampleInputEmail1">Senior High School: </label>
+													<input type="text" name="senior_high_school" class="form-control">											    </div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+												    <label for="exampleInputPassword1">Year Graduated:</label>
+												    <input type="date" name="senior_highschool_graduated_date" class="form-control">
 											    </div>
 											</div>
 											<div class="col-md-4">
 												<div class="form-group">
-												    <label for="exampleInputPassword1">BA Awarded Date:</label>
-												    <input type="date" name="ba_awarded_date" class="form-control">
-											    </div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-												    <label for="exampleInputPassword1">Upload BA Certificate:</label>
-												    <input type="file" value="C:/xampp/htdocs/Imperial University/Images/no-image-available.jpg" name="ba_certificate" class="form-control" >
+												    <label for="exampleInputPassword1">Academic Award/s:</label>
+												    <input type="file" value="C:/xampp/htdocs/Imperial University/Images/no-image-available.jpg" name="acads_certificate" class="form-control" >
 											    </div>
 											</div>
 								  		</div>

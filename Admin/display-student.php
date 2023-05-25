@@ -80,19 +80,19 @@
 				<div class="col-md-4"><h5>Place of Birth:</h5> <?php echo $row['place_of_birth']  ?></div>
 			</div>
 			<div class="row pt-3">
-				<div class="col-md-4"><h5>Matric Complition Date:</h5> <?php echo $row['matric_complition_date']  ?></div>
-				<div class="col-md-4"><h5>Matric Awarded Date:</h5> <?php echo $row['matric_awarded_date']  ?></div>
-				<div class="col-md-4"><h5>Matric Certificate:</h5> <?php echo $row['matric_certificate']  ?></div>
+				<div class="col-md-4"><h5>Primary School:</h5> <?php echo $row['primary_school']  ?></div>
+				<div class="col-md-4"><h5>Year Graduated:</h5> <?php echo $row['primary_graduated_date']  ?></div>
+				<div class="col-md-4"><h5>Academic Award/s::</h5> <?php echo $row['academics_certificate']  ?></div>
 			</div>
 			<div class="row pt-3">
-				<div class="col-md-4"><h5>Fa Complition Date:</h5> <?php echo $row['fa_complition_date']  ?></div>
-				<div class="col-md-4"><h5>Fa Awarded Date:</h5> <?php echo $row['fa_awarded_date']  ?></div>
-				<div class="col-md-4"><h5>Fa Certificate:</h5> <?php echo $row['fa_certificate']  ?></div>
+				<div class="col-md-4"><h5>Secondary School:</h5> <?php echo $row['secondary_school']  ?></div>
+				<div class="col-md-4"><h5>Year Graduated:</h5> <?php echo $row['secondary_graduated_date']  ?></div>
+				<div class="col-md-4"><h5>Academic Award/s:</h5> <?php echo $row['academic_certificate']  ?></div>
 			</div>
 			<div class="row pt-3">
-				<div class="col-md-4"><h5>BA Complition Date:</h5> <?php echo $row['ba_complition_date']  ?></div>
-				<div class="col-md-4"><h5>BA Awarded Date:</h5> <?php echo $row['ba_awarded_date']  ?></div>
-				<div class="col-md-4"><h5>BA Certificate:</h5> <?php echo $row['ba_certificate']  ?></div>
+				<div class="col-md-4"><h5>Senior High School:</h5> <?php echo $row['senior_high_school']  ?></div>
+				<div class="col-md-4"><h5>Year Graduated:</h5> <?php echo $row['senior_highschool_graduated_date']  ?></div>
+				<div class="col-md-4"><h5>Academic Award/s:</h5> <?php echo $row['acads_certificate']  ?></div>
 			</div>
 		</div>
 	<?php } ?>
