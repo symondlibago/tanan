@@ -87,7 +87,7 @@
 				<div class="row">
 					<div class="col-md-12 ml-2">
 						<section class="mt-3">
-							<table class="w-100 table-elements mb-5 table-three-tr" cellpadding="3">
+							<table class="w-100 table-elements mb-5 table-three-tr" cellpadding="3" style="background-color: #e2f1ff !important;">
 								<tr class="table-tr-head table-three text-white">
 									<th>Sr.No</th>
 									<th>Course Code</th>

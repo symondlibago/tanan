@@ -15,10 +15,10 @@
           </div>  
           <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
             <h2>CONTACT DETAILS</h2>
-              <p>Address: Binalbagan,
-                  Negros Occidental – Philippines</p>
+              <p>Address: Ngano Man St.,
+                  Cagayan de Oro City – Philippines</p>
               <p>Telephones: +639272777334</p>
-              <p>E-mail: suarez081119@gmail.com</p>
+              <p>E-mail: academatrix@gmail.com</p>
         </div>
       </div>
     </div>

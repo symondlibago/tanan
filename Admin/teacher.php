@@ -450,8 +450,8 @@
 									</div>
 								</div>
 							</div>
-							<table class="w-100 table-elements mb-5 table-three-tr" cellpadding="10">
-								<tr class="table-tr-head table-three text-white">
+							<table class="w-100 table-elements mb-5 table-three-tr" cellpadding="10" style="background-color: #e2f1ff !important;">
+								<tr class="table-tr-head table-three text-white" >
 									<th>Teacher ID</th>
 									<th>Teacher Name</th>
 									<th>Current Address</th>

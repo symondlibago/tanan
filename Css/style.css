@@ -230,7 +230,7 @@
   }
 
 /* about us */
-	#popup {
+	#popup, #popup-read {
 	position: fixed;
 	top: 40%;
 	left: 50%;
@@ -247,8 +247,10 @@
 
 	
 
-	#popup {
+	#popup, #popup-read {
 		text-align: center;
+		z-index: 1000;
+
 	}
 
 
@@ -258,6 +260,12 @@
 	opacity: 1;
 	transition: 0.5s;
 }
+	#popup-read.active {
+		top: 50%;
+		visibility: visible;
+		opacity: 1;
+		transition: 0.5s;
+	}
 
 	.close {
 	position: absolute;
@@ -269,8 +277,9 @@
 	cursor: pointer;
 }
 
-#readmore a,
-#popup a {
+	#readmore a,
+	#readmore-admission a,
+	#popup a, #popup-read a {
 	position: relative;
 	padding: 5px 20px;
 	display: inline-block;
@@ -281,9 +290,50 @@
 	border-radius: 15px;
 	font-size: 1rem;
 	font-weight: bold;
-}
+	}
+
+	
+
+
+	.home-div.blur,
+	.w-100.in-ad-ap.blur,
+	section#background.blur,
+	footer.blur {
+	filter: blur(5px);
+	}
+
+
+
 
 /* end of about us */
+
+	/* CARDS */
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		transition: box-shadow 0.3s ease-in-out;
+		border: 1px solid #5e0209;
+		padding: 2rem 2.5rem;
+		/* color: #e2f1ff; */
+	  }
+	  
+	  .card img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: 1rem;
+	  }
+	  
+	  .card:hover {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	  }
+	  
+	  
+	/* CARDS END */
+
 
 
 /* academic start */
@@ -435,27 +485,34 @@ html {
 		border: 1px solid rgb(194, 193, 193);
 		padding-left: 10px !important;
 	}
-
 	.table-one{
 		background: #eb1811b6;
 	}
 
 	.table-one-tr tr:hover{
-		background: #eb3a34b6;
+		background: #2c3e50;
 		color: white;
 	}
 	.table-two{
 		background: #51b5e4;
 	}
+
+	
 	.table-two-tr tr:hover{
-		background: #51b5e4;
+		background: #2c3e50;
 		color: white;
 	}
 	.table-three{
 		background: #2c3e50 !important;
+		
+
 	}
+	.table-three-tr tr{
+		background: #e2f1ff;
+	}
+
 	.table-three-tr tr:hover{
-		background: #3e5770;
+		background: #2c3e50;
 		color: white;
 	}
 	.table-four{

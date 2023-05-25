@@ -19,20 +19,21 @@
 				<div class=" col-lg-6 col-md-12 col-sm-12 ">
 					<div>
 						<section class="mt-3">
-							<div class="btn btn-block table-one text-light d-flex">
-								<span class="font-weight-bold"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> Time Table</span>
+							<div class="btn btn-block table-one text-light d-flex" style="background-color: #2c3e50 !important;">
+								<span class="font-weight-bold" ><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> Time Table</span>
 								<a href="" class="ml-auto" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus text-light" aria-hidden="true"></i></a>
 								
 							</div>
-							<div class="collapse show mt-2" id="collapseOne">
+							<div class="collapse show mt-2" id="collapseOne" style="background-color: #e2f1ff !important;" >
 								<table class="w-100 table-elements table-one-tr"cellpadding="2">
-									<tr class="pt-5 table-one text-white" style="height: 32px;">
+								<tr class="pt-5 table-one text-white" style="height: 32px; background-color: #2c3e50 !important;">
 										<th>Class Name</th>
 										<th>Time</th>
 										<th>Day</th>
 										<th>Subject</th>
 										<th>Room No</th>
-									</tr>
+										</tr>
+
 									<?php  
 										$query="select * from time_table tt inner join weekdays wd on tt.day=wd.day_id";
 										$run=mysqli_query($con,$query);
@@ -54,14 +55,14 @@
 				<div class=" col-lg-6 col-md-12 col-sm-12">
 					<div>
 						<section class="mt-3">
-							<div class="btn btn-block table-two text-light d-flex">
+							<div class="btn btn-block table-two text-light d-flex" style="background-color: #2c3e50 !important;">
 								<span class="font-weight-bold"><i class="fa fa-list-alt mr-2" aria-hidden="true"></i> Program List</span>
 								<a href="" class="ml-auto" data-toggle="collapse" data-target="#collapsetwo"><i class="fa fa-plus text-light" aria-hidden="true"></i></a>
 								
 							</div>
 							<div class="collapse show mt-2" id="collapsetwo">
-								<table class="w-100 table-elements table-two-tr"cellpadding="2">
-									<tr class="pt-5 table-two text-white" style="height: 32px;">
+								<table class="w-100 table-elements table-two-tr"cellpadding="2" style="background-color: #e2f1ff !important; " >
+									<tr class="pt-5 table-two text-white" style="height: 32px; background-color: #2c3e50 !important;">
 										<th>Course Code</th>
 										<th>Course Name</th>
 									</tr>
@@ -89,8 +90,8 @@
 								
 							</div>
 							<div class="collapse show mt-2" id="collapsethree">
-								<table class="w-100 table-elements table-three-tr"cellpadding="2">
-									<tr class="pt-5 table-three text-white" style="height: 32px;">
+								<table class="w-100 table-elements table-three-tr"cellpadding="2" style="background-color: #e2f1ff !important;" >
+									<tr class="pt-5 table-three text-white" style="height: 32px; background-color: #2c3e50 !important;">
 										<th>Course Code</th>
 										<th>Course Title</th>
 										<th>Semester</th>
