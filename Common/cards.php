@@ -1,14 +1,14 @@
-</section>
-	<section class=" bg-light text-center">
-		<div class=" w-100 pt-5 m-auto" style="
-	width:100%;
-	padding-right:15px;
-	padding-left:15px;
-	margin-right:auto;
-	margin-left:auto;
-">
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<section class="bg-light text-center" id="background">
+		<div class="w-100 pt-5 m-auto" style="width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;">
 			<h1>FACULTIES</h1>
-			<p>ICBS serves the national and international community through a broad spectrum of undergraduate studies..</p>
+			<p>Academatrix serves the national and international community through a broad spectrum of undergraduate studies.</p>
 			<div class="row pt-3 pb-3">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-10 m-auto">
 					<div class="card card-margin">
@@ -51,5 +51,7 @@
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</section>
+</body>
+</html>

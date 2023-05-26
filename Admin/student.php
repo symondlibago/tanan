@@ -498,7 +498,7 @@
 									</div>
 								</div>
 							</div>
-							<table class="w-100 table-elements mb-5 table-three-tr text-center" cellpadding="10">
+							<table class="w-100 table-elements mb-5 table-three-tr text-center" cellpadding="10" style="background-color: #e2f1ff !important;" > 
 								<tr class="table-tr-head table-three text-white">
 									<th>Roll.No</th>
 									<th>Student Name</th>
