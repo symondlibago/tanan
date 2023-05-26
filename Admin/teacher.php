@@ -28,7 +28,7 @@
  		
  		$application_status=$_POST["application_status"];
  		
- 		$id_no=$_POST["id_no"];
+ 		$nat_id=$_POST["nat_id"];
  		
  		$dob=$_POST["dob"];
  		
@@ -79,7 +79,7 @@
 // *****************************************Images upload code end here********************************************************** 
 
 
- 		$query="Insert into teacher_info(first_name,middle_name,last_name,email,phone_no,profile_image,teacher_status,application_status,id_no,dob,other_phone,gender,permanent_address,current_address,place_of_birth,school_graduated,graduated_date,graduation_certificate,internship,internship_date,completion_certificate,work_experience,ending_date,certificate_of_employment,work_exp,end_date,cert_of_emp,hire_date)values('$first_name','$middle_name','$last_name','$email','$phone_no','$profile_image','$teacher_status','$application_status','$id_no','$dob','$other_phone','$gender','$permanent_address','$current_address','$place_of_birth','$school_graduated','$graduated_date','$graduation_certificate','$internship','$internship_date','$completion_certificate','$work_experience','$ending_date','$certificate_of_employment','$work_exp','$end_date','$cert_of_emp','$date')";
+ 		$query="Insert into teacher_info(first_name,middle_name,last_name,email,phone_no,profile_image,teacher_status,application_status,nat_id,dob,other_phone,gender,permanent_address,current_address,place_of_birth,school_graduated,graduated_date,graduation_certificate,internship,internship_date,completion_certificate,work_experience,ending_date,certificate_of_employment,work_exp,end_date,cert_of_emp,hire_date)values('$first_name','$middle_name','$last_name','$email','$phone_no','$profile_image','$teacher_status','$application_status','$nat_id','$dob','$other_phone','$gender','$permanent_address','$current_address','$place_of_birth','$school_graduated','$graduated_date','$graduation_certificate','$internship','$internship_date','$completion_certificate','$work_experience','$ending_date','$certificate_of_employment','$work_exp','$end_date','$cert_of_emp','$date')";
  		$run=mysqli_query($con, $query);
  		if ($run) {
  			echo "Your Data has been submitted";
@@ -217,7 +217,7 @@
 												<div class="col-md-4">
 													<div class="formp">
 														<label for="exampleInputPassword1">ID No:</label>
-														<input type="text" name="id_no" class="form-control" placeholder="ID No">
+														<input type="text" name="nat_id" class="form-control" placeholder="ID No">
 													</div>
 												</div>
 											</div>
