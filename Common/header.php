@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home-CHMSC</title>
+	<title>Home-ACADEMATRIX</title>
 	<link rel="shortcut icon" href="./Images/icbs_logo.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">

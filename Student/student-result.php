@@ -114,8 +114,8 @@
 									<td><?php echo $total_marks; ?></td>
 									<td><?php echo $obtain_marks; ?></td>
 									<?php  
-										$marks_grade= $total_marks == true ? ($obtain_marks*100)/$total_marks : "";
-										$marks_grade=round($marks_grade);
+										$marks_grade= $total_marks != 0 ? ($obtain_marks*100)/$total_marks : "";
+										$marks_grade=is_numeric($marks_grade) ? round($marks_grade) : "";
 										if ($marks_grade>85) {
 											$final='A+';
 										}

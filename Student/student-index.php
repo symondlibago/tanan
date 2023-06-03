@@ -174,7 +174,7 @@
 										</tr>
 										<?php 
 											$roll_no=$_SESSION['LoginStudent'];
-											$query="select count(attendance_id) as attendance_id,sum(attendance) as attendance,student_id from student_attendance where student_id='$roll_no'";
+											$query="select count(attendance_id) as attendance_id,sum(attendance) as attendance,roll_no from student_attendance where roll_no='$roll_no'";
 											$run=mysqli_query($con,$query);
 											while ($row1=mysqli_fetch_array($run)) { ?>
 											<tr>

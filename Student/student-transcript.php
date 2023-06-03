@@ -140,7 +140,7 @@
     <div class="container mt-4">
         <div class="text-danger text-center m-auto">
             <img src="../Images/icbs_logo.png" alt="" width="100" height="100">
-            <h4 class="text-dark mt-3">IMPERIAL COLLEGE OF BUSINESS STUDIES - ICBS*</h4>
+            <h4 class="text-dark mt-3">ACADEMATRIX COLLEGE OF BUSINESS STUDIES - ICBS*</h4>
             <h4 class="text-dark">SCHOOL OF ARCHITECTURE, ART & DESIGN - SAAD</h4>
         </div>
     </div>

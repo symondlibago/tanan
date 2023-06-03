@@ -78,7 +78,7 @@ if (isset($_POST['sub'])) {
 								</tr>
 								<?php  
 								$i=1;
-									$conn=mysqli_connect("localhost","root","","imperial_college");
+									$conn=mysqli_connect("localhost","root","","college");
 
 									if (isset($_POST['submit'])) {
 										$teacher_id=$_POST['teacher_id'];
