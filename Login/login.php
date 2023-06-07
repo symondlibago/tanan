@@ -17,12 +17,12 @@ session_start();
                     $_SESSION['LoginAdmin']=$row["user_id"];
                     header('Location: ../admin/admin-index.php');
                 }
-                else if ($row["Role"]=="Teacher" and $row["account"]=="Activate")
+                else if ($row["Role"]=="Teacher" and $row["account"]=="Active")
                 {
                     $_SESSION['LoginTeacher']=$row["user_id"];
                     header('Location: ../teacher/teacher-index.php');
                 }
-                else if ($row["Role"]=="Student" and $row["account"]=="Activate")
+                else if ($row["Role"]=="Student" and $row["account"]=="Active")
                 {
                     $_SESSION['LoginStudent']=$row['user_id'];
                     header('Location: ../student/student-index.php');
@@ -39,13 +39,13 @@ session_start();
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Login - CHMSC</title>
+		<title>Login - ACADEMATRIX</title>
 	</head>
 	<body class="login-background">
 		<?php include('../common/common-header.php') ?>
         <div class="login-div mt-3 rounded">
             <div class="logo-div text-center">
-                <img src="../Images/chmsc.png" alt="" class="align-items-center" width="100" height="100">
+                <img src="../Images/logo.png" alt="" class="align-items-center" width="100" height="100">
             </div>
             <div class="login-padding">
                 <h2 class="text-center text-white">LOGIN</h2>

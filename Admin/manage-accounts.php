@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 	$que="update login set account='$account' where user_id = '$user_id'";
 	$run=mysqli_query($con,$que);
 	if ($run) {
-		$message =  $account == "Activate" ? "Account Activated Successfully" : "Account Deactivated Successfully";
+		$message =  $account == "Active" ? "Account Activated Successfully" : "Account Deactivated Successfully";
 	}	
 	else{
 		$message = "Account Not Activated  Successfully";
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 						<div class="row">
 							<div class="col-md-12">
 								<?php
-									if(($account == "Activate" or $account == "Deactivate") and $message==true)
+									if(($account == "Active" or $account == "Deactivate") and $message==true)
 										$bg_color = "alert-success";
 									else if($message==true)
 										$bg_color = "alert-danger";	
@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
 												<label>Enter Account Status:</label>
 												<select name="account" class="form-control">
 													<option>Select Account Status</option>
-													<option value="Activate">Activate</option>
+													<option value="Active">Active</option>
 													<option value="Deactivate">Deactivate</option>
 
 												</select>
