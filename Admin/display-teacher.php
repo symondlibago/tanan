@@ -54,7 +54,7 @@
 						</div>
 						<div class="col-md-6">
 							<h5>Address:</h5> <?php echo $row['permanent_address']  ?><br><br>
-							<h5>CNIC:</h5> <?php echo $row['cnic']  ?><br><br>
+							<h5>CNIC:</h5> <?php echo $row['nat_id']  ?><br><br>
 							<h5>Teacher I'd:</h5> <?php echo $row['teacher_id']  ?><br><br>
 						</div>		
 					</div>
@@ -77,24 +77,24 @@
 				<div class="col-md-4"><h5>Place of Birth:</h5> <?php echo $row['place_of_birth']  ?></div>
 			</div>
 			<div class="row pt-3">
-				<div class="col-md-4"><h5>Matric Complition Date:</h5> <?php echo $row['matric_complition_date']  ?></div>
-				<div class="col-md-4"><h5>Matric Awarded Date:</h5> <?php echo $row['matric_awarded_date']  ?></div>
-				<div class="col-md-4"><h5>Matric Certificate:</h5> <?php echo $row['matric_certificate']  ?></div>
+				<div class="col-md-4"><h5>School Graduated:</h5> <?php echo $row['school_graduated']  ?></div>
+				<div class="col-md-4"><h5>Date Graduated:</h5> <?php echo $row['graduated_date']  ?></div>
+				<div class="col-md-4"><h5>Diploma</h5> <?php echo $row['graduation_certificate']  ?></div>
 			</div>
 			<div class="row pt-3">
-				<div class="col-md-4"><h5>Fa Complition Date:</h5> <?php echo $row['fa_complition_date']  ?></div>
-				<div class="col-md-4"><h5>Fa Awarded Date:</h5> <?php echo $row['fa_awarded_date']  ?></div>
-				<div class="col-md-4"><h5>Fa Certificate:</h5> <?php echo $row['fa_certificate']  ?></div>
+				<div class="col-md-4"><h5>Internship:</h5> <?php echo $row['internship']  ?></div>
+				<div class="col-md-4"><h5>Internship Date:</h5> <?php echo $row['internship_date']  ?></div>
+				<div class="col-md-4"><h5>Completion Certificate:</h5> <?php echo $row['completion_certificate']  ?></div>
 			</div>
 			<div class="row pt-3">
-				<div class="col-md-4"><h5>BA Complition Date:</h5> <?php echo $row['ba_complition_date']  ?></div>
-				<div class="col-md-4"><h5>BA Awarded Date:</h5> <?php echo $row['ba_awarded_date']  ?></div>
-				<div class="col-md-4"><h5>BA Certificate:</h5> <?php echo $row['ba_certificate']  ?></div>
+				<div class="col-md-4"><h5>Work Experience:</h5> <?php echo $row['work_experience']  ?></div>
+				<div class="col-md-4"><h5>Ending Date:</h5> <?php echo $row['ending_date']  ?></div>
+				<div class="col-md-4"><h5>Certificate of Employment:</h5> <?php echo $row['certificate_of_employment']  ?></div>
 			</div>
 			<div class="row pt-3">
-				<div class="col-md-4"><h5>MA Complition Date:</h5> <?php echo $row['ma_complition_date']  ?></div>
-				<div class="col-md-4"><h5>MA Awarded Date:</h5> <?php echo $row['ma_awarded_date']  ?></div>
-				<div class="col-md-4"><h5>MA Certificate:</h5> <?php echo $row['ma_certificate']  ?></div>
+				<div class="col-md-4"><h5>Work Experience:</h5> <?php echo $row['work_exp']  ?></div>
+				<div class="col-md-4"><h5>Ending Date:</h5> <?php echo $row['end_date']  ?></div>
+				<div class="col-md-4"><h5>Certificate of Employment:</h5> <?php echo $row['cert_of_emp']  ?></div>
 			</div>
 		</div>
 	<?php } ?>
