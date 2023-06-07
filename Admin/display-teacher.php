@@ -54,7 +54,7 @@
 						</div>
 						<div class="col-md-6">
 							<h5>Address:</h5> <?php echo $row['permanent_address']  ?><br><br>
-							<h5>CNIC:</h5> <?php echo $row['nat_id']  ?><br><br>
+							<h5>CNIC:</h5> <?php echo $row['cnic']  ?><br><br>
 							<h5>Teacher I'd:</h5> <?php echo $row['teacher_id']  ?><br><br>
 						</div>		
 					</div>
